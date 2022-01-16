@@ -3,7 +3,7 @@ use std::collections::{HashMap, HashSet};
 
 pub struct Solution;
 
-impl Solution {
+impl Solution { 
     pub fn min_jumps(&self, arr: Vec<i32>) -> i32 {
         let mut arrived:Vec<bool> = vec![false; arr.len()];
         let mut graph:HashMap<i32, Vec<usize>> = HashMap::new();
